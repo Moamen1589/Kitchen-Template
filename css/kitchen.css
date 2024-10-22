@@ -1,0 +1,347 @@
+:root{
+    --main-padding-top:60px;
+    --main-padding-bottom:60px;
+}
+::-webkit-scrollbar {
+    width: 18px;              
+  }
+  
+  ::-webkit-scrollbar-track {
+    background-color: #1a1a1f;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: white; 
+    border: 2px solid transparent;
+    background-clip: content-box;
+  }
+  
+
+.container{
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.landing{
+ background-image: url(../images/Untitled-design-33-550x413.png);
+ background-size: cover;
+ position: relative;
+ animation: landing 2.7s ease ;
+ -webkit-animation: landing 2.7s ease ;
+}
+@keyframes landing{
+    0%{
+        opacity: 0;
+     
+    }
+    100%{
+        opacity: 1;
+    }
+}
+ .landing h1{
+    animation: landing-text 2s ease-out;
+    -webkit-animation: landing-text 2s ease-out;
+}
+@keyframes landing-text{
+    0%{
+        transform: translateY(-1000px);
+        -webkit-transform: translateY(-1000px);
+        -moz-transform: translateY(-1000px);
+        -ms-transform: translateY(-1000px);
+        -o-transform: translateY(-1000px);
+        font-size: 0;
+}
+100%{
+    transform: translateY(0);
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    font-size: 128px;
+}
+}
+.overlay{
+position: absolute;
+width: 100%;
+background-color: rgba(0, 0, 0, 40%);
+
+}
+.landing .head-info,.intro-text{
+    position: relative;
+}
+.intro-text{
+    height: 500px;
+    display: flex;
+    justify-content: center;
+flex-direction: column;
+align-items: center;
+gap: 40px;
+}
+
+.about{
+padding-top: var(--main-padding-top);
+padding-bottom: var(--main-padding-bottom);
+}
+
+.left-side,
+.right-side{
+    flex-basis: 50%;
+}
+.right-side{
+   display: flex;
+   align-items: center;
+   flex-wrap: wrap;
+   align-content: center;
+}
+
+.photo{
+ width: 400px;
+ height: 560px;
+ background-image: url("../images/2cooking.webp");
+ background-size: cover;
+ animation:  about-photo 2s ease-in  infinite ;
+ -webkit-animation:  about-photo 2s ease-in linear  0.9s infinite ;
+}
+@keyframes about-photo {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(20px);
+        -webkit-transform: translateY(20px);
+        -moz-transform: translateY(20px);
+        -ms-transform: translateY(20px);
+        -o-transform: translateY(20px);
+    }
+
+    100% {
+        transform: translateY(0);
+        -webkit-transform: translateY(0);
+        -moz-transform: translateY(0);
+        -ms-transform: translateY(0);
+        -o-transform: translateY(0);
+}
+}
+.right-side  p{
+    line-height: 1.8;
+}
+/* start video */
+
+.video{
+position: relative;
+width: 100%;
+}
+
+video{
+   width: 100%;
+}
+
+.main-content .container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+    gap: 40px;
+}
+/* end video */
+/* start pricing */
+.pricing{
+    padding-top: var(--main-padding-top);
+    padding-bottom: var(--main-padding-bottom);
+    min-height: 80vh;
+}
+.pricing .container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+    gap: 40px;
+    margin-top: 30px;
+
+}
+.food{
+    height: 520px;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    padding: 15px 0;
+    text-align: center;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    transition:  0.7s;
+    -webkit-transition:  0.7s;
+    -moz-transition:  0.7s;
+    -ms-transition:  0.7s;
+    -o-transition:  0.7s;
+    overflow: hidden;
+    cursor: pointer;
+}
+.food::before{
+          content: "";
+          background-color: rgba(0, 0, 0, 40%);
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          top: 0;
+          left: 0;
+          opacity: 0;
+          transition:  0.5s;
+          -webkit-transition:  0.5s;
+          -moz-transition:  0.5s;
+          -ms-transition:  0.5s;
+          -o-transition:  0.5s;
+}
+.food:hover::before{
+    opacity: 1;
+    transform: scale(3);
+    -webkit-transform: scale(3);
+    -moz-transform: scale(3);
+    -ms-transform: scale(3);
+    -o-transform: scale(3);
+}
+.food span{
+   background-color: white;
+   width: 250px;
+   height: 40px;
+   margin: 10px auto;
+   padding: 5px 0;
+   font-size: 20px;
+   border-radius: 5px;
+   -webkit-border-radius: 5px;
+   -moz-border-radius: 5px;
+   -ms-border-radius: 5px;
+   -o-border-radius: 5px;
+}
+#food1{
+    background-image: url("../images/chicken-congee-tn.jpg");
+    background-size: cover;
+    background-position: center;
+}
+#food2{
+    background-image: url("../images/uncle-george-s-laksa-singapore-s-best-secret-ede.jpg");
+    background-size: cover;
+    background-position: center;
+}
+#food3{
+    background-image: url("../images/vegan-noodle-salad.jpg");
+    background-size: cover;
+    background-position: center;
+}
+/* end pricing */
+/* start store */
+.store{
+    padding-top: var(--main-padding-top);
+    padding-bottom: var(--main-padding-bottom);
+    min-height: 50vh;
+}
+.veg-photo{
+    animation:  about-photo 2s ease-in  infinite ;
+}
+.photo-side .veg-photo{
+    width: 400px;
+    height: 500px;
+    background-image: url("../images/istockphoto-1456995003-612x612.jpg");
+    background-size: cover;
+background-position: center;
+}
+
+/* end  store */
+
+/* start reveiws */
+.reviews{
+    padding-top: var(--main-padding-top);
+    padding-bottom: var(--main-padding-bottom);
+    min-height: 65vh;
+}
+/* end reviews */
+/* start meals */
+.meals{
+    padding-top: var(--main-padding-top);
+    padding-bottom: var(--main-padding-bottom);
+    min-height: 90vh;
+}
+.meals .container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+    gap: 50px;
+}
+.meal-photo{
+    width: 100%;
+    height: 250px;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    overflow: hidden;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+.meals .container .box{
+ height: 450px;
+ background-color: white;
+ border-radius: 15px;
+ -webkit-border-radius: 15px;
+ -moz-border-radius: 15px;
+ -ms-border-radius: 15px;
+ -o-border-radius: 15px;
+ display: flex;
+ flex-direction: column;
+ gap: 35px;
+ padding: 20px;
+ cursor: pointer;
+
+}
+.meals .container .box .meal-photo img{
+    width: 100%;
+    height: 100%;
+    transition:0.4s ;
+    -webkit-transition:0.4s ;
+    -moz-transition:0.4s ;
+    -ms-transition:0.4s ;
+    -o-transition:0.4s ;
+}
+
+.meals .container .box:hover img{
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+
+
+
+/* end meals */
+.contact{
+    padding-top: var(--main-padding-top);
+    min-height: 80vh;
+    background-image: url("../images/contact.jpg");
+    background-size: cover;
+    position: relative;
+}
+@media(max-width:992px){
+    .contact{
+        min-height: 40vh;
+    }
+}
+.contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #00000094;
+    top: 0;
+    left: 0;
+}
+.contact .container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(250px,1fr));
+    gap: 30px;
+    align-items: center;
+    position: relative;
+}

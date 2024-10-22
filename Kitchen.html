@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to our Kitchen</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap"
+        rel="stylesheet">
+    <!-- Tailwind css file -->
+    <link rel="stylesheet" href="output.css">
+    <!-- css main flie  -->
+    <link rel="stylesheet" href="./css/kitchen.css">
+    <link rel="stylesheet" href="./css/all.min.css">
+
+</head>
+
+<body>
+    <!-- start landing -->
+    <div class="landing   h-screen  bg-black">
+        <div class="overlay h-screen "></div>
+        <div class="head-info  w-full flex justify-between">
+            <h2 class=" font-jet   text-2xl w-fit  leading-9 pl-4 pt-4 w400:p-10  text-white">OUR KITCHEN COMFORTS</h2>
+            <a href="#"> <span class=" block leading-9 pl-4 pt-4 w400:p-10 text-white text-2xl font-jet">SIGN IN | SIGN UP</span></a>
+
+        </div>
+        <div class=" intro-text  text-white ">
+            <h1 class=" text-8xl  w400:text-9xl">CIY Meal Kits</h1>
+            <p class=" text-3xl  w400:mt-10">Unleash your inner chef</p>
+        </div>
+    </div>
+    <!-- end landing -->
+    <!-- start about -->
+    <div class="about   bg-current   text-white pt-16">
+        <div class="   container flex gap-10  flex-col-reverse w992:flex-row ">
+            <div class="left-side flex justify-center items-center basis-1/2">
+                <div class="photo  rounded-2xl  ">
+
+                </div>
+            </div>
+            <div class="right-side basis-1/2">
+                <h2 class=" text-5xl  font-inter ">ABOUT</h2>
+                <p class=" text-xl mt-10   ">At Kitchen Comforts, we know the value of a home-cooked meal. Every dish we
+                    create is made fresh
+                    on-site, with ingredients sourced or harvested on the same day. We believe in slow cooking and
+                    meal-savoring - because good things take time.
+                    Now that times have changed, we must adapt. With our new Cook-It-Yourself (CIY) Meal Kits, we bring
+                    the Kitchen Comfort experience straight to your doorstep. Inside, you'll find everything you need to
+                    recreate our beloved home-style meals: Easy to follow illustrated recipes, prepared ingredients, and
+                    even a QR code for real-time cooking videos to help you unleash your inner chef.
+
+                    Times have changed, but our philosophy has not. We believe in the life-changing comfort of a good
+                    meal - and now you can cook it yourself!</p>
+            </div>
+        </div>
+    </div>
+    <!-- end about -->
+    <!-- start steps -->
+
+    <div class="video ">
+        <video  autoplay  muted loop>
+
+            <source src="images/istockphoto-1316335269-640_adpp_is.mp4_1728969598191.mp4" type="video/mp4">
+        </video>
+
+
+        
+        <div class="main-content flex flex-col justify-around   p-b pb-5  w-full  h-full bg-black  w992:bg-current2   w992:absolute  bottom-0  left-0  ">
+            <h1 class=" text-center text-6xl text-white font-inter pt-11 mb-14 ">How it works</h1>
+            <div class="container   min-h-56 ">
+                <div class="box">
+                    <span
+                        class="  m-[10px] mx-auto flex justify-center items-center w-16 h-16  rounded-full bg-current text-white text-xl  ">1</span>
+                    <p class=" font-inter mt-4 text-white text-center  text-base  leading-8">Visit reallygreatsite.com
+                        to browse our available CIY Meal Kits.</p>
+                </div>
+                <div class="box">
+                    <span
+                        class="  m-[10px] mx-auto flex justify-center items-center w-16 h-16  rounded-full bg-current text-white text-xl">2</span>
+                    <p class=" font-inter mt-4 text-white text-center text-base leading-8">Select your chosen Kit, input
+                        your delivery address, and pay securely online.</p>
+                </div>
+                <div class="box">
+                    <span
+                        class=" m-[10px] mx-auto  flex justify-center items-center w-16 h-16  rounded-full bg-current text-white text-xl">3</span>
+                    <p class=" font-inter mt-4 text-white text-center  text-base leading-8">The CIY Meal Kit will be at
+                        your doorstep at your chosen time the following day.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- end steps -->
+    <!-- start pricing -->
+    <div class="pricing bg-current ">
+        <h1 class=" font-inter text-5xl text-white  pl-9 w768:pl-36">PRICING</h1>
+        <div class="container">
+            <div class="food font-inter" id="food1">
+                <span class=" block text-center bg-white ">$20.00</span>
+                <p class=" text-2xl text-white font-inter  pl-10 pr-10">Comfort Congee
+                    An Asian favorite</p>
+            </div>
+            <div class="food" id="food2">
+                <span class=" block text-center">$21.50</span>
+                <p class=" text-2xl text-white font-inter  pl-10 pr-10">Spicy Laksa
+                    Hearty with a zing</p>
+            </div>
+            <div class="food" id="food3">
+                <span class=" block text-center">$19.00</span>
+                <p class=" text-2xl text-white font-inter  pl-10 pr-10">Vegan Feast
+                    Healthy & wholesome</p>
+            </div>
+
+        </div>
+    </div>
+    <!-- end pricing -->
+    <!-- start store -->
+    <div class="store">
+        <div class="container flex justify-evenly  flex-col-reverse w992:flex-row ">
+            <div class="photo-side flex justify-center  basis-1/2 w992:flex-none">
+                <div class="veg-photo rounded-2xl">
+
+                </div>
+            </div>
+            <div class="info-side basis-1/2 ">
+                <div class="info flex  flex-col items-center text-left">
+                    <h2 class=" font-inter text-4xl  mb-14">What's inside each box?</h2>
+                    <ul class=" list-disc">
+                        <li class="  mb-11 font-inter text-2xl">Illustrated step-by-step recipes
+                        </li>
+                        <li class=" mb-11 font-inter text-2xl">Ready to cook ingredients
+                        </li>
+                        <li class=" mb-11 font-inter text-2xl">QR codes for real-time videos
+                        </li>
+                        <li class=" mb-11 font-inter text-2xl">Guaranteed delicious meals!
+                        </li>
+                    </ul>
+                    <!-- give to button margin bottom for screens less than 768px -->
+                    <button class=" font-inter bg-black w-44 text-white p-3 rounded-3xl mb-7 ">Browse our KITS</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end  store -->
+    <!-- start reviews -->
+    <div class="reviews bg-black  text-white">
+        <div class="container flex justify-evenly gap-8 flex-col w768:flex-row ">
+            <div class="first-side basis-1/2">
+                <h1 class=" mb-8 text-5xl font-jet">REVIEWS</h1>
+                <h2 class=" text-4xl font-jet">Hear from our new home chefs</h2>
+            </div>
+            <div class="second-side basis-1/2">
+                <ul class=" ">
+                    <li class=" font-inter text-2xl mb-5">Kitchen Comforts brought true comfort to our table. These CIY
+                        Meal Kits are incredible!</li>
+                    <li class=" font-jet mb-11 ">@reallygreatsite</li>
+                    <li class=" font-inter text-2xl mb-5"> never knew I could cook dishes like these. It's truly easy -
+                        and my family is grateful!</li>
+                    <li class=" font-jet mb-11 ">@reallygreatsite</li>
+                    <li class=" font-inter text-2xl mb-5">I admire businesses that evolve with the times, and Kitchen
+                        Comforts did it so deliciously!</li>
+                    <li class=" font-jet ">@reallygreatsite</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- end reviews -->
+    <!-- start meals -->
+    <div class="meals bg-current">
+        <div class="head-text flex justify-evenly text-white">
+            <h1 class=" text-6xl font-jet">CIY Meal Kits</h1>
+            <h2 class="  text-2xl font-inter ">Take home the Kitchen Comforts experience. <br>
+                Try our Meal Kits and unleash your inner chef!</h2>
+        </div>
+        <div class="container mt-24">
+            <div class="box">
+                <div class="meal-photo">
+                    <img src="./images/food-4-2.jpg" alt="">
+                </div>
+                <p class=" font-inter text-center text-xl">Hearty, wholesome meals for the whole family </p>
+                <button
+                    class=" bg-black w-52 m-[10px] mx-auto pt-2 pb-2 pl-5 pr-5 rounded-3xl text-white font-inter">TRY
+                    OUR FAMILY FEAST KITS </button>
+            </div>
+            <div class="box">
+                <div class="meal-photo">
+                    <img src="./images/food-5.jpg" alt="">
+                </div>
+                <p class=" font-inter text-center text-xl">Vegan favorites with a delicious twist</p>
+                <button
+                    class=" bg-black w-52 m-[10px] mx-auto pt-2 pb-2 pl-5 pr-5 rounded-3xl text-white font-inter">TVIEW
+                    OUR VEGAN OPTIONS</button>
+            </div>
+            <div class="box">
+                <div class="meal-photo">
+                    <img src="./images/food-6-2.jpg" alt="">
+                </div>
+                <p class=" font-inter text-center text-xl">Asian delights to take you on a culinary trip</p>
+                <button
+                    class=" bg-black w-52 m-[10px] mx-auto pt-2 pb-2 pl-5 pr-5 rounded-3xl text-white font-inter">EAT
+                    YOUR WAY TO ASIA</button>
+            </div>
+        </div>
+    </div>
+    <!-- end  meals -->
+    <!-- start contact -->
+    <div class="contact pb-3">
+        <h1 class=" text-white text-5xl relative  pl-20 font-jet">GET IN TOUCH</h1>
+        <div class="container text-white h-full mt-12 ">
+            <div class="info">
+                <h2 class=" mb-4  text-3xl font-jet">SOCIAL</h2>
+                <ul class=" font-inter">
+                    <a class=" group " href="">
+                        <li class=" mb-3 duration-200 group-hover:text-blue-600"> <i class="fa-brands fa-facebook  mr-3"
+                                style="color:#1877f2;"></i>Facebook </li>
+                    </a>
+                    <a class=" group " href="">
+                        <li class="  mb-3  duration-200 group-hover:text-rose-500"> <i
+                                class="fa-brands fa-instagram  mr-3" style="color:#E4405F;"></i>Instagram </li>
+                    </a>
+                    <a class=" group " href="">
+                        <li class="  mb-3  duration-200 group-hover:text-sky-400"> <i class="fa-brands fa-twitter  mr-3"
+                                style="color:#1DA1F2"></i>Twitter </li>
+                    </a>
+                    <a class=" group " href="">
+                        <li class="  mb-3  duration-200 group-hover:text-sky-600"> <i
+                                class="fa-brands fa-linkedin  mr-3" style="color:#0077B5"></i>Linkedin </li>
+                    </a>
+                </ul>
+            </div>
+            <div class="info">
+                <h2 class=" mb-4  text-3xl font-jet">LOCATION</h2>
+                <p class=" font-inter leading-10">786 Plane Street, Eastern Cape, Engcobo 5054</p>
+            </div>
+            <div class="info">
+                <p class=" font-inter">9436 Feather Street, Santa Fe, New Mexico 87501</p>
+            </div>
+            <div class="info">
+                <p class=" font-inter">2179 Clover Avenue, Coquitlam, British Columbia V3J 5S9</p>
+            </div>
+        </div>
+    </div>
+    <!-- end contact -->
+    <footer class="  h-20  bg-black text-xl text-white font-jet flex flex-col justify-center items-center ">
+        <h1>MADE BY: ENG/ MOAMEN ADEL</h1>
+        <span>
+            <a class="group" href="https://www.facebook.com/profile.php?id=100011456073542" target="_blank"> <i
+                    class="fa-brands fa-facebook duration-150 group-hover:text-blue-700 mr-3"></i></a>
+            <a class="group" href="https://www.linkedin.com/in/momen-adel-86456828a" target="_blank"><i
+                    class="fa-brands fa-linkedin duration-150 group-hover:text-blue-800  mr-3"></i></a>
+        </span>
+    </footer>
+
+</body>
+
+</html>
